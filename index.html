@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/all.css">
+    </head>
+    <body>
+        <article class="try">
+            <div id="mySingIn" class="singIn">
+                <h2>sing in</h2>
+                <ul>
+                    <li> <a href="#"><i class="fab fa-facebook-f"></a></i></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></a></i></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></a></i>
+                </ul>
+                <p>our use your email for registration</p>
+                <form autocomplete="off">
+                    <input type="email" placeholder="&#xf073; E-mail" required>
+                    <input type="password" placeholder="&#xf084; Password" pattern="[A_Za-z\d]{6,12}" title="password must be" required>
+                    <input id="in"type="submit" value="sing in">
+                </form>
+            </div>
+            <div id='mySingUp' class="singUp">
+                <h2>sing up</h2>
+                <ul>
+                    <li> <a href="#"><i class="fab fa-facebook-f"></a></i></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></a></i></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></a></i></li>
+                </ul>
+                <p>our use your email for registration</p>
+                <form>
+                    <input type="text" placeholder="&#xf007; User name" required>
+                    <input type="email" placeholder="&#xf073;  E-mail" required>
+                    <input type="password" placeholder="&#xf084; Password" required>
+                    <input id="up" type="submit" value="sing up">
+                </form>
+            </div>
+            <div id="switcher" class="move">
+                <div id="father" class="father">
+                    <section class="front">
+                        <h2>hello friend!</h2>
+                        <p>enter your personal id <br> plesae sign with your email</p>
+                    </section>
+                    <section class="back">
+                        <h2>welcome back !</h2>
+                        <p>to kip connected with us <br> please sign with your email</p>
+                    </section>
+                </div>
+                <button id="singUp">sing up</button>
+            </div>
+        </article>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

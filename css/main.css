@@ -1,0 +1,154 @@
+/*start Global*/
+*{
+    box-sizing: border-box;
+}
+*::first-letter{
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+*:focus{
+    outline: none;
+}
+.onFocus{
+    background-color: #DDD !important;
+    border:1px solid #DDD !important;
+}
+.rotate{
+    transform: rotateY(-180deg) !important;
+}
+.moveLeft{
+    transform: translateX(0%) !important;
+}
+:root{
+    --main-color: #02B796;
+}
+/*end Global*/
+.addFliter{
+    filter: blur(1px);
+}
+article.try{
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    height: 500px;
+    position: relative;
+    box-shadow: 0 0 30px 0 #000;
+    border-radius: 15px;
+}
+article.try > div{
+    height: 100%;
+    border-radius: 15px;
+}
+article.try div.singIn,
+article.try div.singUp{
+    float:left;
+    width: 50%;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+article.try div.singIn h2,
+article.try div.singUp h2{
+    margin: 30px 0;
+    color: var(--main-color ,green);
+}
+article.try div.singIn ul,
+article.try div.singUp ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 20px auto;
+}
+article.try div.singIn ul li,
+article.try div.singUp ul li{
+    display: inline;
+}   
+article.try div.singIn ul li i,
+article.try div.singUp ul li i{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--main-color ,green);
+    color: var(--main-color ,green);
+}
+article.try div.singIn p,
+article.try div.singUp p{
+    color: #888
+}
+article.try div.singIn form,
+article.try div.singUp form{
+    margin-top: 50px;
+}
+article.try div.singIn form input,
+article.try div.singUp form input{
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: .5px solid #000;
+    background-color: #DEE6E9;
+    padding: 5px;
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+}
+article.try div.singIn form input[type="submit"],
+article.try div.singUp form input[type="submit"]{
+    background-color: var(--main-color ,green);
+    color: #FFF;
+    padding: 5px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 1s ease-in-out;
+}
+
+article.try div.move{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    background-color: var(--main-color ,green);
+    width: 50%;
+    height: 100%;
+    transition: all 2s ease-in-out;
+    transform: translateX(100%);
+}
+
+article.try div.move{
+    position: relative;
+    padding-top: 70px;
+}
+article.try div.move div.father{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 2s ease-in-out;
+    text-align: center;
+}
+article.try div.move div.father section{
+    position: absolute;
+    width:50%;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+article.try div.move div.father section.front{
+    top: 0;
+    left: 25%;
+}
+
+article.try div.move div.father section.back{
+    transform: rotateY(-180deg);
+    top: 0;
+    right: 25%;
+
+}
+article.try div.move button{
+    position: absolute;
+    left: 40%;
+    bottom: 40%;
+    background-color: var(--main-color ,green);
+    color: #FFF;
+    padding: 5px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: .5px solid #FFF;
+}
