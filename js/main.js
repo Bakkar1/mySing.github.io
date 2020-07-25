@@ -19,7 +19,7 @@ butUp.onclick = function(){
         signupb.removeAttribute('disabled');
 
         signinb.classList.add('onFocus');
-        singUp.classList.remove('onFocus');
+        signupb.classList.remove('onFocus');
 
         singIn.classList.add('addFliter'); 
         singUp.classList.remove('addFliter');

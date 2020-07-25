@@ -1,16 +1,20 @@
 /*start Global*/
 *{
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 *::first-letter{
     text-transform: uppercase;
 }
+*:focus{
+    outline: none;
+}
+h2{
+    text-transform: capitalize;
+}
 a{
     text-decoration: none;
     color: inherit;
-}
-*:focus{
-    outline: none;
 }
 .onFocus{
     background-color: #DDD !important;
@@ -72,6 +76,12 @@ article.try div.singUp ul li i{
     border-radius: 50%;
     border: 1px solid var(--main-color ,green);
     color: var(--main-color ,green);
+    transition: all .5s ease-in-out;
+}
+article.try div.singIn ul li i:hover,
+article.try div.singUp ul li i:hover{
+    color: #FFF;
+    background-color: var(--main-color ,green);
 }
 article.try div.singIn p,
 article.try div.singUp p{
@@ -129,6 +139,7 @@ article.try div.move div.father section{
     width:50%;
     backface-visibility: hidden;
     transform-style: preserve-3d;
+    color: #FFF;
 }
 article.try div.move div.father section.front{
     top: 0;
@@ -143,12 +154,12 @@ article.try div.move div.father section.back{
 }
 article.try div.move button{
     position: absolute;
-    left: 40%;
+    left: 37%;
     bottom: 40%;
     background-color: var(--main-color ,green);
     color: #FFF;
-    padding: 5px 30px;
+    padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     border: .5px solid #FFF;
-}
+    width: 150px;
