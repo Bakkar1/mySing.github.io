@@ -6,7 +6,11 @@ var butUp = document.getElementById('singUp'),
     signinb = document.getElementById('in'),
     signupb = document.getElementById('up'),
     singIn = document.getElementById('mySingIn'),
-    singUp = document.getElementById('mySingUp');
+    singUp = document.getElementById('mySingUp'),
+    SchowHideIn = document.getElementById('hideSchow'),
+    myPassIn = document.getElementById('myPass'),
+    SchowHideUp = document.getElementById('hideSchowUp'),
+    myPassUp = document.getElementById('myPassUp');
 
 
 butUp.onclick = function(){
@@ -60,3 +64,21 @@ for( var i = 0; i < myArray.length; i++){
         }
     }
 }
+
+function showHideFun(label, pass){
+    var myChild = label.children[0];
+    pass.classList.add('marginForPass');
+    label.onclick = function(){
+        if(myChild.className == "far fa-eye"){
+            myChild.className = "far fa-eye-slash";
+            pass.setAttribute('type', 'text');
+        }
+        else{
+            myChild.className = "far fa-eye";
+            pass.setAttribute('type', 'password');
+        }
+    }
+}
+
+showHideFun(SchowHideIn, myPassIn);
+showHideFun(SchowHideUp, myPassUp);
